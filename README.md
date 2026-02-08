@@ -13,10 +13,6 @@ La API expone endpoints para gestionar el recurso Carrito mediante las operacion
 
 ![tabla](imagenes/tablaendpoints.png)
 
-Aclaraciones:
-- precioFinal se considera un valor proporcionado por el cliente y se devuelve en las respuestas.
-- los errores de validación devuelven un 400 con el detalle de los campos incorrectos.
-
 
 ## 2. Ejecución en Postman
 
