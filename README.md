@@ -6,7 +6,7 @@ Para ello se ha desarrollado un servicio que permite gestionar un recurso Carrit
 El sistema modela un caso simplificado de e-commerce, en el que cada carrito contiene un único producto gestionado en memoria
 
 
-## 1.Descripción de endpoints 
+## 1. Descripción de endpoints 
 
 La API expone endpoints para gestionar el recurso Carrito mediante las operaciones CRUD. Las peticiones POST y PUT reciben un cuerpo en formato JSON y están sujetas a validación. En caso de error, la API responde con códigos HTTP estándar (400, 404, 409) según corresponda.
 
@@ -17,7 +17,7 @@ Aclaraciones:
 - los errores de validación devuelven un 400 con el detalle de los campos incorrectos.
 
 
-## 2.Ejecución en Postman
+## 2. Ejecución en Postman
 
 Para verificar el correcto funcionamiento de la API REST desarrollada, se han realizado distintas pruebas utilizando la herramienta Postman.
 En esta sección se muestran capturas de las peticiones realizadas a cada uno de los endpoints, comprobando tanto los casos correctos como las posibles situaciones de error.
