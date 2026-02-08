@@ -2,7 +2,8 @@
 ### Objetivo:
 
 Esta práctica trata de aprender a diseñar e implementar una API REST sencilla utilizando Spring Boot. 
-Para ello se ha desarrollado un servicio que permite gestionar un recurso Carrito mediante operaciones CRUD (crear, leer, actualizar y borrar), siguiendo el modelo request/response sobre HTTP. La API se ha implementado sin persistencia en base de datos, gestionando los datos en memoria, y se ha probado su funcionamiento utilizando Postman, verificando tanto los casos correctos como los distintos escenarios de error.
+Para ello se ha desarrollado un servicio que permite gestionar un recurso Carrito mediante operaciones CRUD (crear, leer, actualizar y borrar), siguiendo el modelo request/response sobre HTTP. 
+La API se ha implementado sin persistencia en base de datos, gestionando los datos en memoria, y se ha probado su funcionamiento utilizando Postman, verificando tanto casos correctos como algunos escenarios de error.
 El sistema modela un caso simplificado de e-commerce, en el que cada carrito contiene un único producto gestionado en memoria
 
 
