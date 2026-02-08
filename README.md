@@ -1,6 +1,5 @@
 # Práctica 2 – Creación API REST
 ### Objetivo:
-## Objetivo de la práctica
 
 Esta práctica trata de aprender a diseñar e implementar una API REST sencilla utilizando Spring Boot. 
 Para ello se ha desarrollado un servicio que permite gestionar un recurso Carrito mediante operaciones CRUD (crear, leer, actualizar y borrar), siguiendo el modelo request/response sobre HTTP. La API se ha implementado sin persistencia en base de datos, gestionando los datos en memoria, y se ha probado su funcionamiento utilizando Postman, verificando tanto los casos correctos como los distintos escenarios de error.
@@ -17,12 +16,13 @@ Aclaraciones:
 - precioFinal se considera un valor proporcionado por el cliente y se devuelve en las respuestas.
 - los errores de validación devuelven un 400 con el detalle de los campos incorrectos.
 
+
 ## 2.Ejecución en Postman
 
 Para verificar el correcto funcionamiento de la API REST desarrollada, se han realizado distintas pruebas utilizando la herramienta Postman.
 En esta sección se muestran capturas de las peticiones realizadas a cada uno de los endpoints, comprobando tanto los casos correctos como las posibles situaciones de error.
 
-# POST
+### POST
 Crear un recurso carrito
 
 ![creacorrecto](imagenes/creacarrito1.png)
@@ -35,7 +35,8 @@ Crear un recurso carrito duplicado
 
 ![creaduplicado](imagenes/creacarrito2.png)
 
-# GET
+
+### GET
 Leer carrito existente
 
 ![leerexistente](imagenes/getcarrito1.png)
@@ -45,8 +46,7 @@ Leer carrito inexistente
 ![leerinexistente](imagenes/getcarrito2.png)
 
 
-# PUT 
-
+### PUT 
 Actualizar carrito existente
 
 ![actualizarexistente](imagenes/actualizarcarrito1.png)
@@ -60,8 +60,7 @@ Actualizar carrito cuyo id no coincide con la url
 ![actualizaridincorrecto](imagenes/actualizarcarrito2.png)
 
 
-# DELETE 
-
+### DELETE 
 Borrar carrito existente 
 
 ![borrarexistente](imagenes/borrarcarrito1.png)
@@ -76,11 +75,11 @@ El repositorio contiene los siguientes elementos principales:
 
 - [imagenes/](./imagenes) – Carpeta que contiene las capturas de las pruebas realizadas con Postman.
 - [src/main/java/edu/comillas/icai/gitt/pat/spring/p2/](./src/main/java/edu/comillas/icai/gitt/pat/spring/p2) – Código fuente de la aplicación Spring Boot.
-    - **ControladorRest** – Controlador REST que define los endpoints del recurso Carrito.
-    - **ModeloCarrito** – Modelo que representa el recurso Carrito.
-    - **ModeloCampoIncorrecto** – Modelo utilizado para devolver errores de validación.
-    - **ExcepcionCarritoIncorrecto** – Excepción personalizada para el manejo de errores de validación.
-    - **P2Application** – Clase principal que arranca la aplicación Spring Boot.
+    - ControladorRest –> Controlador REST que define los endpoints del recurso Carrito.
+    - ModeloCarrito –> Modelo que representa el recurso Carrito.
+    - ModeloCampoIncorrecto –> Modelo utilizado para devolver errores de validación.
+    - ExcepcionCarritoIncorrecto –> Excepción personalizada para el manejo de errores de validación.
+    - P2Application –> Clase principal que arranca la aplicación Spring Boot.
 - [src/main/resources/](./src/main/resources) – Recursos de la aplicación.
 - [src/test/](./src/test) – Estructura destinada a pruebas (no utilizada en esta práctica).
 - [pom.xml](./pom.xml) – Archivo de configuración Maven con las dependencias del proyecto.
