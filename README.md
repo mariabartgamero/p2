@@ -22,7 +22,7 @@ Aclaraciones:
 Para verificar el correcto funcionamiento de la API REST desarrollada, se han realizado distintas pruebas utilizando la herramienta Postman.
 En esta sección se muestran capturas de las peticiones realizadas a cada uno de los endpoints, comprobando tanto los casos correctos como las posibles situaciones de error.
 
-#### POST
+### POST
 Crear un recurso carrito
 
 ![creacorrecto](imagenes/creacarrito1.png)
@@ -36,7 +36,7 @@ Crear un recurso carrito duplicado
 ![creaduplicado](imagenes/creacarrito2.png)
 
 
-#### GET
+### GET
 Leer carrito existente
 
 ![leerexistente](imagenes/getcarrito1.png)
@@ -46,7 +46,7 @@ Leer carrito inexistente
 ![leerinexistente](imagenes/getcarrito2.png)
 
 
-#### PUT 
+### PUT 
 Actualizar carrito existente
 
 ![actualizarexistente](imagenes/actualizarcarrito1.png)
@@ -60,7 +60,7 @@ Actualizar carrito cuyo id no coincide con la url
 ![actualizaridincorrecto](imagenes/actualizarcarrito2.png)
 
 
-#### DELETE 
+### DELETE 
 Borrar carrito existente 
 
 ![borrarexistente](imagenes/borrarcarrito1.png)
