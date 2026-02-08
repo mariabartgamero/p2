@@ -57,6 +57,10 @@ public class ControladorRest {
         if (carritos.get(idCarrito) == null) {
             throw new ResponseStatusException( HttpStatus.NOT_FOUND, "No existe el carrito a actualizar"); //404
         }
+        if (!idCarrito.equals(carritoNuevo.idCarrito())){
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "El id Carrito nuevo no coincide con el de la URL");
+
+        }
 
         //ModeloCarrito carritoActual = carritos.get(idCarrito);
         ModeloCarrito carritoActualizado = new ModeloCarrito(
